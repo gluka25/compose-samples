@@ -79,6 +79,7 @@ object Libs {
             const val toolingPreview = "androidx.compose.ui:ui-tooling-preview:$version"
             const val test = "androidx.compose.test:test-core:$version"
             const val uiTest = "androidx.compose.ui:ui-test:$version"
+            const val uiTestManifest = "androidx.compose.ui:ui-test-manifest:$version"
         }
 
         object Navigation {
@@ -95,15 +96,19 @@ object Libs {
         object Test {
             private const val version = "1.4.0"
             const val core = "androidx.test:core:$version"
+            const val runner = "androidx.test:runner:$version"
             const val rules = "androidx.test:rules:$version"
-
             object Ext {
                 private const val version = "1.1.2"
                 const val junit = "androidx.test.ext:junit-ktx:$version"
             }
-
             const val espressoCore = "androidx.test.espresso:espresso-core:3.2.0"
         }
+    }
+
+    object JUnit {
+        private const val version = "4.13"
+        const val junit = "junit:junit:$version"
     }
 
     object Coil {
